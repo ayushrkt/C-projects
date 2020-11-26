@@ -15,7 +15,7 @@ if(scanf("%u : %u : %u , %u", &h2, &m2, &s2, &ms2)!=4 || h2>23 || m2 > 59 || s2 
 }
 
 
-unsigned int absoltime_1 = ms1 + (1000*s1) + (60*1000*m1) + (60*60*1000*h1); //converts the entire time to milliseconds
+unsigned int absoltime_1 = ms1 + (1000*s1) + (60*1000*m1) + (60*60*1000*h1); //converts the entire time to millisecond
 unsigned int absoltime_2 = ms2 + (1000*s2) + (60*1000*m2) + (60*60*1000*h2); 
 int time_difference= absoltime_2 - absoltime_1; 
 if(time_difference< 0){ //sanitizes input.
